@@ -1,0 +1,26 @@
+[
+    {
+        "id": 0,
+        "title": "Tarea uno",
+        "description": "Arreglar las luces traseras del Raptor",
+        "done": true
+    },
+    {
+        "id": 1,
+        "title": "Tarea dos",
+        "description": "Pintar la casa",
+        "done": false
+    },
+    {
+        "id": 2,
+        "title": "Tarea tres",
+        "description": "Sacar al perro",
+        "done": true
+    },
+    {
+        "id": 3,
+        "title": "Tarea cuatro",
+        "description": "Regar las matas",
+        "done": false
+    }
+]

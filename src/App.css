@@ -1,38 +1,108 @@
 .App {
-  text-align: center;
+  /*text-align: center;*/
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mensaje {
+  border-width: 1px;
+  border-color: #efefef;
+  border-style: solid;
+  width: 80%;
+  margin: 3px auto;
+  text-align: left;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.contanedor-mensaje {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mensaje-id {
+  margin: 15px;
+  color: #777;
+}
+.mensaje-title {
+  width: 100%;
+  font-size: 0.8em;
+  color: #c7c7c7;
+  margin-top: 6px;
+  margin-left: 5px;
+}
+.mensaje-description{
+  width: 100%;
+
+}
+.mensaje-done{
+  width: 100%;
+  text-align: center;
+  font-size: 0.7em;
+  color: #c7c7c7;
+  margin: 3px 0;
+  cursor: pointer;
+}
+
+.completa {
+  color: #d8d8d8;
+}
+.incompleta {
+  color: #6d6d6d;
+}
+
+.boton-borrar {
+  border: none;
+  background: none;
+  border-style: solid;
+  border-color: brown;
+  border-width: 1px;
+  border-radius: 3px;
+  color: brown;
+  cursor: pointer;
+  margin: 15px;
+  opacity: 0.95;
+}
+
+.form {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: flex-end;
+  padding: 15px;
+}
+.formTarea-title {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.formTarea-description {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.formTarea-boton {
+
+}
+
+.modal{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.4);
+  height: 100vh;
+  width: 100vw;
+  /* filter: blur(1px); */
+  display: flex;
+  flex-flow: column;
+}
+
+.close-modal {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 70px;
+  top: 7vh;
+}
+
+.modal-tarjeta {
+  background: white;
+  padding: 50px;
 }
