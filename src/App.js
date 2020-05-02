@@ -127,6 +127,7 @@ class App extends React.Component {
           <Link to={this.state.app_route + '/'}>Home</Link>
           <Link to={this.state.app_route +'/publicaciones'}>Publicaciones</Link>
           <Route 
+            exact
             path={this.state.app_route + '/'}
             render={()=>{
               return (
