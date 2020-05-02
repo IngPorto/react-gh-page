@@ -11,6 +11,7 @@ class App extends React.Component {
   constructor(props){
     super(props)
     this.state = {
+      app_route: 'react-gh-page',
       is_mensaje: true,
       tareas: tareas,
       is_editorTarea: false,
@@ -123,8 +124,8 @@ class App extends React.Component {
     return (
       <div className="App">
         <BrowserRouter>
-          <Link to='/'>Home</Link>
-          <Link to='/publicaciones'>Publicaciones</Link>
+          <Link to={this.state.app_route + '/'}>Home</Link>
+          <Link to={this.state.app_route +'/publicaciones'}>Publicaciones</Link>
           <Route 
             path="/"
             render={()=>{
