@@ -126,7 +126,6 @@ class App extends React.Component {
           <Link to='/'>Home</Link>
           <Link to='/publicaciones'>Publicaciones</Link>
           <Route 
-            exact
             path="/"
             render={()=>{
               return (
